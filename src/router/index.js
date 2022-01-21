@@ -5,7 +5,7 @@ import About from '/src/components/About.vue'
 const routes = [
     {
         path: '/',
-        name: 'Home',
+        name: 'Homse',
         component: Home,
     },
     {
@@ -14,9 +14,16 @@ const routes = [
         component: About,
     }
 ]
+
 const router = createRouter({
+    base: "/studio-web/",
     history: createWebHistory(),
-    routes
+    routes,
+    scrollBehavior() {
+        return { top: 0 };
+    }
 })
+
+console.log(router)
 
 export default router
