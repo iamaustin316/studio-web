@@ -1,11 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '/src/components/Home.vue'
-import About from '/src/components/About.vue'
+console.log('yoooooooooooooooooo-vue-router')
+import { createRouter, createWebHashHistory } from 'vue-router'
+import Home from '@/components/Home.vue'
+import About from '@/components/About.vue'
 
 const routes = [
     {
         path: '/',
-        name: 'Homse',
+        name: 'Home',
         component: Home,
     },
     {
@@ -16,14 +17,8 @@ const routes = [
 ]
 
 const router = createRouter({
-    base: "/studio-web/",
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes,
-    scrollBehavior() {
-        return { top: 0 };
-    }
 })
-
-console.log(router)
 
 export default router

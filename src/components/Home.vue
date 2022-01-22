@@ -8,6 +8,7 @@
 </template>
 
 <script setup>
+    console.log('yoooooooooooooooooo')
     import { useStore } from 'vuex';
     import { computed, ref } from 'vue';
     import { useRouter } from 'vue-router';
@@ -23,9 +24,8 @@
             alert("請輸入")
             return false
         }
-        alert(nameinput.value.value)
-        // store.dispatch('saveName', newName.value)
-        // newName.value = ""
-        // router.push('/about')
+        store.dispatch('saveName', newName.value)
+        newName.value = ""
+        router.push('/about')
     }
 </script>

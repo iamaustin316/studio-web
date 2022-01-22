@@ -1,3 +1,4 @@
+console.log('yoooooooooooooooooo-vuex')
 import { createStore } from "vuex"
 import user from "./modules/user"
 
