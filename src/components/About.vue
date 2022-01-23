@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>{{ name }}</p>
-        <router-link to="/">Home</router-link>
+        <router-link to="/">home</router-link>
     </div>
 </template>
 

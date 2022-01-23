@@ -4,6 +4,4 @@ import store from '@/store'
 import App from './App.vue'
 import './index.css'
 
-console.log('yoooooooooooooooooo')
-
 createApp(App).use(router).use(store).mount('#app')

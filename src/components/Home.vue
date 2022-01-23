@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="height: 9000px">
         <h1 class="text-3xl font-extrabold text-gray-500">Home</h1>
         <p>store name herer: <span class="pl-4 text-lg">{{ name }}</span></p>
         <input v-model="newName" class="rounded border-dashed border-4 p-2 mr-4" type="text" ref="nameinput">
@@ -8,7 +8,6 @@
 </template>
 
 <script setup>
-    console.log('yoooooooooooooooooo')
     import { useStore } from 'vuex';
     import { computed, ref } from 'vue';
     import { useRouter } from 'vue-router';
