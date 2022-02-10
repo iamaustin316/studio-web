@@ -10,17 +10,17 @@ export default defineConfig({
     vue(),
     viteImagemin({
       gifsicle: {
-        optimizationLevel: 7,
+        optimizationLevel: 1,
         interlaced: false,
       },
       optipng: {
-        optimizationLevel: 7,
+        optimizationLevel: 1,
       },
       mozjpeg: {
-        quality: 20,
+        quality: 10,
       },
       pngquant: {
-        quality: [0.8, 0.9],
+        quality: [0.1, 0.1],
         speed: 4,
       },
       svgo: {
